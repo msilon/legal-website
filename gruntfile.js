@@ -2,21 +2,23 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-  imagemin: {
-    static: {
-      options: {
-        optimizationLevel: 7
-      },
+    imagemin: {
+      static: {
+        options: {
+          optimizationLevel: 7
+        },
+        
       files: [
         {
           expand: true,
           cwd: 'src/images',
           src: ['**/*.{jpg, jpeg}'],
           dest: 'src/images/compressed'
-        }
-      ]
-    }
-  },
+          }
+        ]
+      }
+    },
+
 		uncss: {
 		   dist: {
 		      files: {
